@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "email": "Vaibhav@gmail.com",
+      "firstName": "Vaibhav",
+      "lastName": "Shenoy",
+      "id": 1
+    },
+    {
+      "email": "Harsh@gmail.com",
+      "firstName": "Harsh",
+      "lastName": "Sawant",
+      "id": 4
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

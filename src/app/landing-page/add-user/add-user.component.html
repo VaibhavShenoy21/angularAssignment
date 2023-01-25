@@ -1,0 +1,25 @@
+<div class="container">
+<div class="main-block">
+    <h1>Create New User</h1>
+    <div class="formDiv" [formGroup]="userForm">
+        <div class="form-group firstField">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control inputStyle" id="email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+        </div>
+        <div class="form-group fields">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control inputStyle" id="firstName" placeholder="First Name" formControlName="firstName">
+        </div>
+        <div class="form-group fields">
+          <label for="middleName">Middle Name</label>
+          <input type="text" class="form-control inputStyle" id="middleName" placeholder="Middle Name" formControlName="middleName">
+        </div>
+        <div class="form-group fields">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control inputStyle" id="lastName" placeholder="Last Name" formControlName="lastName">
+          </div>
+          <button class="btn btn-danger firstField" (click)="cancelDetails()">Cancel</button>
+        <button type="submit" class="btn btn-primary firstField savebtn" (click)="postUserDetails()" [disabled]="userForm.invalid">ADD User</button>
+    </div>
+</div>
+</div>
